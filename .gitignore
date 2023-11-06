@@ -1,2 +1,5 @@
-
+# Ignorar pasta font-familys/
 font-familys/brodies/brodies.ttf
+
+# Ignorar arquivos .gitignore
+.gitignore
