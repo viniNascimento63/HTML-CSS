@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        @font-face {
+            font-family: 'brodies';
+            src: url(fonts/brodies.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body {
+            font-family: 'brodies', Times, serif;
+        }
+
+        h1 {
+            
+            font-size: 3em;
+            font-weight: normal;
+        }
+        
+        p {
+            font: normal 400 1.3em 'Josefin Sans', Times, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis. Nemo quisquam dicta velit totam laborum. Deserunt dolor quam nihil voluptates, ratione temporibus ex sit autem error nisi! Deserunt, fugiat.</p>
+</body>
+</html>
