@@ -50,13 +50,18 @@ header > p > a {
 }
 
 /* Conteúdo principal */
-main {
-    
-}
 
 p.estrofe {
     font: normal normal 1.7em var(--fonte-conteudo);
     max-width: 330px;
     margin: 20px;
     margin-left: 25px;
+}
+
+#joaninha {
+    background-color: lightgray;
+}
+
+#papeis {
+    background-color: lightgray;
 }
