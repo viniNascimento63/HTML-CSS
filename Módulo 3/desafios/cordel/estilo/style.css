@@ -58,10 +58,14 @@ p.estrofe {
     margin-left: 25px;
 }
 
+.imagem {
+    background-position: center;
+}
 #joaninha {
-    background-color: lightgray;
+    background-image: url('../imagens/background001.jpg');
+    height: 50vh;
 }
 
 #papeis {
-    background-color: lightgray;
+    background-image: url('../imagens/background002.jpg');
 }
