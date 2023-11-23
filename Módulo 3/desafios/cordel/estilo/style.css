@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
@@ -10,45 +10,38 @@
     --fonte-destaque: 'Passion One', cursive;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 body {
-    margin: 0;
+    background-color: lightgray;
 }
 
 /* Cabeçalho */
 header {
     background-color: black;
-    height: 200px;
-    position: relative;
+    color: white;
+    text-align: center;
 }
 
 header > h1 {
-    font: normal normal 4em var(--fonte-destaque);
-    color: white;
-    text-align: center;
-    margin: 0px;
-
-    left: 50%;
-    top: 50%;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
+    padding-top: 50px;
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header > p {
-    margin: 0px;
+    font: normal normal 1.1em var(--fonte-padrao);
 }
 
 header > p > a {
+    text-decoration: none;
     color: white;
-    font: normal normal 1.3em var(--fonte-padrao);
-
-    left: 50%;
-    top: 75%;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
 }
-
 /* Conteúdo principal */
 
 p.estrofe {
