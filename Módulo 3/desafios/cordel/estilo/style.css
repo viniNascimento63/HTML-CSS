@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-conteudo: 'Sriracha', --fonte-padrao;
     --fonte-destaque: 'Passion One', cursive;
 }
@@ -35,13 +35,19 @@ header > h1 {
 }
 
 header > p {
-    font: normal normal 1.1em var(--fonte-padrao);
+    font: normal normal 1em var(--fonte-padrao);
+    padding-bottom: 50px;
 }
 
 header > p > a {
     text-decoration: none;
     color: white;
 }
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
 /* Conteúdo principal */
 
 p.estrofe {
@@ -61,4 +67,24 @@ p.estrofe {
 
 #papeis {
     background-image: url('../imagens/background002.jpg');
+}
+
+/* Rodapé */
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
