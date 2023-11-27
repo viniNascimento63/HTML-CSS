@@ -51,18 +51,17 @@ header > p > a:hover {
 /* Conteúdo principal */
 
 p.estrofe {
-    font: normal normal 1.7em var(--fonte-conteudo);
-    max-width: 330px;
+    font: normal normal 3.5vw var(--fonte-conteudo);
     margin: 20px;
     margin-left: 25px;
 }
 
 .imagem {
-    background-position: center;
+    background-position: right center;
 }
 #joaninha {
     background-image: url('../imagens/background001.jpg');
-    height: 50vh;
+    height: 60vh;
 }
 
 #papeis {
