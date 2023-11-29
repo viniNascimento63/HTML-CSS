@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 
 /* Cabeçalho */
@@ -54,14 +54,27 @@ p.estrofe {
     font: normal normal 3.5vw var(--fonte-conteudo);
     margin: 20px;
     margin-left: 25px;
+    padding: 5px;
 }
 
 .imagem {
-    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
+
+.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    border-radius: 15px 0px 10px 0px;
+    text-shadow: 1px 1px 0px black;
+}
+
 #joaninha {
     background-image: url('../imagens/background001.jpg');
-    height: 60vh;
+    background-position: right center; 
 }
 
 #papeis {
