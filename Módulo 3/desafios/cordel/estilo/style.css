@@ -51,7 +51,7 @@ header > p > a:hover {
 /* Conteúdo principal */
 
 p.estrofe {
-    font: normal normal 3.5vw var(--fonte-conteudo);
+    font: normal normal 2.5vw var(--fonte-conteudo);
     margin: 20px;
     margin-left: 25px;
     padding: 5px;
