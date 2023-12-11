@@ -6,14 +6,20 @@
     <title>Desafio 3 tabelas</title>
     <style>
         table {
-            width: 300px;
+            width: 500px;
             border-collapse: collapse;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        tr.fundo > th {
+            background-color: gray;
+            color: white;
         }
 
         td {
@@ -25,21 +31,26 @@
 <body>
     <table>
         <thead>
-            <tr>
-                <th>Área</th>
-                <th>Disciplina</th>
+            <tr class="fundo">
                 
-                <th colspan="2">Notas</th>
-                <tr>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                </tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
                 
-                <th rowspan="2">Média</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+
+                <th scope="col" rowspan="2">Média</th>
+                
             </tr>
 
+            <tr class="fundo">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        
+        <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -65,13 +76,13 @@
                 <td>0.0</td>   
             </tr>
 
-            <tr>
-                <th colspan="4">Média Exatas</th>
+            <tr class="fundo">
+                <th scope="row" colspan="4">Média Exatas</th>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -85,12 +96,11 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4">Méda Humanas</th>
+            <tr class="fundo">
+                <th scope="row" colspan="4">Méda Humanas</th>
                 <td>0.0</td>
             </tr>
-        </thead>
-        <tbody></tbody>
+        </tbody>
     </table>
 </body>
 </html>
