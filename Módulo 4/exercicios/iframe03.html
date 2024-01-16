@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repudiandae molestias dolorum odit expedita enim non ipsam sed! Culpa possimus rem necessitatibus facere. Blanditiis, quia reiciendis pariatur iure atque obcaecati?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae minima minus vero hic est doloribus explicabo aspernatur ducimus obcaecati cumque id, architecto eos dolor aperiam eveniet tempore sint debitis consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum tenetur deleniti pariatur doloribus quia, dolores inventore quisquam? Necessitatibus ut in harum dolorum veritatis ipsum, nam enim cupiditate doloremque obcaecati delectus?</p>
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi iusto distinctio expedita reprehenderit deserunt maxime eligendi a voluptate tempore, ut veritatis ducimus suscipit soluta commodi architecto et veniam tenetur ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora et dolore consequuntur neque rem corrupti sequi veritatis. Illum asperiores deserunt aut suscipit quis tenetur praesentium ipsum nulla mollitia nesciunt.</p>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+</body>
+</html>
