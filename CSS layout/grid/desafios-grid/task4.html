@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+        }
+
+        div.card {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        ul.tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        ul.tags li {
+            list-style: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: rgb(143, 143, 143);
+            border: 2px solid rgb(211, 211, 211);
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0px 5px 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://mdn.github.io/css-examples/learn/tasks/grid/balloons1.jpg" alt="a single red balloon">
+            <ul class="tags">
+                <li>balloon</li>
+                <li>red</li>
+                <li>sky</li>
+                <li>blue</li>
+                <li>Hot air balloon</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img src="https://mdn.github.io/css-examples/learn/tasks/grid/balloons2.jpg"
+                alt="balloons over some houses">
+            <ul class="tags">
+                <li>balloons</li>
+                <li>houses</li>
+                <li>train</li>
+                <li>harborside</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img src="https://mdn.github.io/css-examples/learn/tasks/grid/balloons3.jpg"
+                alt="close-up of balloons inflating">
+            <ul class="tags">
+                <li>balloons</li>
+                <li>inflating</li>
+                <li>green</li>
+                <li>blue</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img src="https://mdn.github.io/css-examples/learn/tasks/grid/balloons4.jpg" alt="a balloon in the sun">
+            <ul class="tags">
+                <li>balloon</li>
+                <li>sun</li>
+                <li>sky</li>
+                <li>summer</li>
+                <li>bright</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
